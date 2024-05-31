@@ -5,6 +5,8 @@
 html,
 body {
   height: 100%;
+ 
+  
 }
 
 @layer base {
@@ -118,6 +120,12 @@ body {
   @apply flex flex-wrap items-center justify-center dark:bg-background/70 bg-white/40 backdrop-blur-md z-40 sticky top-0 !border-none left-0 right-0;
 }
 
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 .ql-formats {
   @apply flex flex-shrink-0;
 }
@@ -125,6 +133,9 @@ body {
 .ql-container {
   @apply !border-none;
 }
+
+
+
 
 .ql-editor > p,
 ol,
